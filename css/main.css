@@ -1,0 +1,635 @@
+/* 
+color-main: #FEB0BD;
+color-main-sec: #FEB0BD
+*/
+
+
+html
+{
+    font-size: 2em  /* This is get a global rem. 1rem = 2em */;
+    position: relative;
+
+}
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /*Instead of a normalize.css file I am using this suite to overrun the Agent Style Sheet */
+}
+
+header  img
+{
+    width: 25%;
+    display: inline-block;
+    margin: 0.5rem;
+     
+}
+
+
+.mainHeader  i
+{
+    margin: 0.5rem;
+    float: right;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: rgb(250, 159, 174);
+
+}
+
+.mainHeader
+{
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    z-index: 30000;
+    background-color: rgba(255, 255, 255, 0.692);
+}
+
+
+.showcase
+{
+    background-image: linear-gradient(to top right, rgba(254, 176, 189, 0.945), rgba(254, 176, 189, 0.568) ), url("/images/theycode.jpg");
+    background-position: bottom;
+    background-size: cover;
+    font-size: 0.7rem;
+    height: 87vh;
+    text-align: center;
+    clip-path: polygon(0% 0 , 100% 10%, 100% 70%, 0% 100%);
+    position: relative;
+    margin-top: 4rem;
+}
+
+.showcase h1
+{
+   position: absolute;
+   top: 30%;
+   left: 10%;
+   right: 0;
+    color: white;
+    font-family: 'Monoton', cursive;
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem
+}
+
+.showcase h2
+{
+    color: white;
+    font-family: 'Monoton', cursive;
+    letter-spacing: 0.1rem;
+    position: absolute;
+   top: 40%;
+   left: 10%;
+   right: 0;
+}
+
+
+
+
+.foundersBox .thefounderquote
+{
+    width: 90%;
+    margin: 0 auto;
+    font-size: 0.6rem;
+    background-image: linear-gradient(to top left,  rgba(254, 176, 189, 0.345), rgba(254, 176, 189, 0.368) );
+    font-weight: lighter;
+    color: rgba(254, 176, 189, 0.945);
+    border-radius: 20px 8px;
+    height: 70vh;
+  
+}
+
+.foundersBox p
+{
+    margin: 0.5rem;
+    text-align: left;
+    font-family: 'Pontano Sans', sans-serif; 
+    font-weight: bolder
+    
+}
+
+.foundersBox p:nth-child(2)
+{
+    margin-top: 0;
+}
+
+.foundersBox .mark2
+{
+    font-size: 3rem;
+    text-align: right;
+    font-family: 'Spirax', cursive;
+    color: rgba(0, 0, 0, 0.555)}
+
+.foundersBox .quotemark
+{
+    font-size: 3rem;
+    text-align: left;
+    font-family: 'Spirax', cursive;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.582)
+}
+
+.foundersBox .founderimage
+{
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -3rem;
+    border-radius: 20px 8px;
+    position: relative;
+    
+    
+}
+
+.founderimage img
+{
+    width: 100%;
+    border-radius: 20px 8px;
+    
+}
+
+.founderimage .foundername
+{
+    background-color: rgba(254, 176, 189, 0.795);
+    width: 60%;
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    position: absolute;
+    bottom: 10%;
+    font-size: 0.5rem;
+    font-weight: lighter;
+    
+
+}
+
+.foundername p:nth-child(2)
+{
+    font-size: 0.35rem;
+    padding: 0;
+    color: black;
+    font-weight: bolder;
+    
+}
+
+.cores
+{
+    text-align: center;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.cores h2
+{
+    font-family: 'Spirax';
+}
+
+.leadership h2:nth-child(1),
+.Impact h2:nth-child(1),
+.Purpose h2:nth-child(1)
+{
+    font-family: 'Pontano Sans';
+    padding: 1rem;
+    border: 2px solid rgb(254, 176, 189);
+    width: 50%;
+    margin: 1rem auto;
+}
+
+.leadership h2:nth-child(2),
+.Impact h2:nth-child(2),
+.Purpose h2:nth-child(2)
+{
+    
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cores p
+{
+    font-size: 0.58rem;
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    line-height: 0.9rem;
+    font-family: 'Pontano Sans';
+    
+}
+
+.testimonies
+{
+    /* background-color: rgb(254, 176, 189, 0.1); */
+    font-family: 'Pontano Sans';
+   
+}
+
+.testimonies h2
+{
+    font-size: 0.7rem;
+    margin: 1.2rem 0;
+    text-align: center;
+}
+
+.testimonies img
+{
+    width: 25%;
+    border-radius: 100px 13px;
+    text-align: left;
+    margin: 0 1rem;
+
+}
+
+.testimonycard p
+{
+    text-align: right;
+    font-size: 0.7rem;
+}
+
+.testimonycard
+{
+    border: rgb(254, 176, 189) 1px solid;
+    padding: 0.4rem;
+    margin: 0.9rem 0.6rem;
+    box-shadow: 1px 1px 3px  1px rgb(254, 176, 189);
+    background-color: rgba(254, 176, 189, 0.068);
+}
+
+.testimonycard h3
+{
+    color: rgb(254, 176, 189);
+    text-align: right;
+    margin: 0.7rem 0
+}
+
+.testimonycard b
+{
+    color: rgba(0, 0, 0, 0.555);
+    font-size: 2rem;
+}
+
+.ourTechnologies img
+{ 
+    width: 100%;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+
+.signup
+{
+    font-size: 0.6rem;
+    font-family: 'Pontano Sans';
+    text-align: center
+}
+
+.signup h2
+{
+    width: 70%;
+    display: inline-block;
+}
+
+.signup .signbutton
+{
+    width: 90%;
+    display: inline-block;
+    margin: 0 auto;
+    
+   
+}
+
+.signup .signbutton button
+{
+    
+    background-color: white;
+    outline: none;
+    border: 1px solid rgb(254, 176, 189);
+    border-radius: 5px;
+    width: 45%;
+    display: inline-block;
+    padding: 0.6rem 0.2rem;
+    margin: 0.7rem 0;
+    font-size: 0.6rem;
+    font-family: 'Pontano Sans';
+    font-weight: bolder
+  
+
+}
+
+.signup .signbutton button:hover
+{
+    background-color:  rgb(254, 176, 189, 0.4);
+    color: white;
+    transform: scale(1.1);
+    transition:  1s;
+    border-radius: 5px;
+}
+
+.blog
+{
+    margin: 2rem 0;
+}
+
+.blog img
+{
+    width: 100%;
+    content: hidden;
+    font-family: 'Pontano Sans';
+    position: relative;
+    z-index: -4000;
+}
+
+.blogintro
+{
+    background-color: rgba(254, 176, 189, 0.926);
+    border-radius: 12px;
+    padding: 0.4rem 0;
+    width: 90%;
+    margin: 1.3rem auto;
+    margin-top: -3rem;
+    color: white;
+    z-index: 44;
+    top: 80%;
+
+
+}
+
+.blogintro h2
+{
+    font-size: 0.8rem;
+    font-family: 'Pontano Sans';;
+    font-weight: bolder;
+    border-bottom: 2px solid rgb(247, 235, 237);
+    text-align: center;
+   
+}
+
+.blogintro p
+{
+    font-size: 0.63rem;
+    font-family: 'Pontano Sans';
+    line-height: 1.1rem;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.blogintro  .read, 
+.blogintro  .readon,
+.blogintro .watch
+{
+    font-size: 0.6rem;
+   color: rgba(0, 0, 0, 0.411);
+   width: 45%;
+   display: inline-block;
+   text-align: center;
+}
+
+.blogintro .readon
+{
+    font-size: 0.9rem;
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    cursor: pointer;
+}
+
+.socialplatform i{
+    color: rgba(254, 176, 189, 0.926);
+    display: inline-block;
+    width: 12%;
+
+}
+
+.socialplatform
+{
+    text-align: center;
+    margin: 0.7rem 0;
+}
+
+footer
+{
+    background-color: rgba(254, 176, 189, 0.926);
+    color: white;
+    font-size: 0.5rem;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Pontano Sans';
+}
+
+.menu
+{
+    background-image: linear-gradient(to top right, rgba(254, 176, 189, 0.945), rgba(254, 176, 189, 0.568) ), url("/images/Africa.png");
+    background-position: bottom;
+    background-size: cover;
+    margin: 0.3rem;
+    text-align: center;
+    color: white;
+    height: 100vh;
+    font-family: 'Pontano Sans';
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.menu li
+{
+    margin: 0.4rem;;
+
+}
+
+.menu ul
+{
+    padding-top: 7vh
+}
+
+
+.menu .cancel
+{
+    cursor: pointer; 
+}
+
+@media(min-width: 1009px)
+{
+    header  img
+{
+    width: 15%;
+    display: inline-block;
+    margin: 0.5rem;
+     
+}
+
+.mainHeader i
+{
+    color: rgba(254, 176, 189, 1);
+    font-size: 1.4rem;
+}
+
+.showcase
+{
+    background-image: linear-gradient(to top right, rgba(254, 176, 189, 0.945), rgba(254, 176, 189, 0.568) ), url("/images/theycode.jpg");
+    background-position: bottom;
+    background-size: cover;
+    font-size: 1.2rem;
+    height: 87vh;
+    text-align: center;
+    clip-path: polygon(0% 0 , 100% 10%, 100% 70%, 0% 100%);
+    position: relative;
+    margin-top: 5rem;
+   
+  
+}
+
+.showcase h2
+{
+    color: white;
+    font-family: 'Monoton', cursive;
+    letter-spacing: 0.3rem;
+    position: absolute;
+   top: 40%;
+   left: 10%;
+   right: 0;
+}
+
+.showcase h1
+{
+   position: absolute;
+   top: 26%;
+   left: 5%;
+   right: 0;
+    color: white;
+    font-family: 'Monoton', cursive;
+    letter-spacing: 0.1rem;
+    font-size: 2.6rem;
+    
+}
+
+.foundersBox 
+{
+    width: 95%;
+    margin: 0 auto;
+}
+.foundersBox .thefounderquote
+{
+    vertical-align: top;
+    width: 48%;
+    margin: 0 auto;
+    font-size: 0.6rem;
+    background-image: linear-gradient(to bottom left,  rgba(254, 176, 189, 0.245), rgba(254, 176, 189, 0.768) );
+    font-weight: lighter;
+    color: black;
+    border-radius: 20px 8px;
+    height: 45vh;
+    display: inline-block;
+  
+}
+
+.foundersBox .founderimage
+{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: -3rem;
+    border-radius: 20px 8px;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    
+    
+    
+}
+
+
+.leadership,
+.Impact, 
+.Purpose
+{
+    width: 30%;
+    display: inline-block;
+}
+
+
+
+
+.testimonies img
+{
+    width: 60%;
+    border-radius: 100px 13px;
+    text-align: left;
+    margin: 0 1rem;
+
+}
+.testimonycard
+{
+    border: none;
+    padding: 0.4rem;
+    width: 29%;
+    display: inline-block;
+    margin: 0.9rem 0.6rem;
+    box-shadow: none;
+    background-color: rgba(254, 176, 189, 0.068);
+    vertical-align: top;
+
+}
+
+.testimonies
+{
+    text-align: left;
+}
+
+.ourTechnologies 
+{
+    width: 74%;
+    margin: 0 auto;
+    text-align: center
+}
+
+.ourTechnologies img
+{
+    width: 60%;
+    margin:0 auto;
+}
+
+.signup
+{
+    background-color:rgba(254, 176, 189, 0.868);
+    width: 70%;
+    margin: 3rem auto;
+    padding: 2rem 0;
+
+}
+
+.signup .signbutton button
+{
+    
+    background-color: white;
+    outline: none;
+    border: 1px solid rgb(254, 176, 189);
+    border-radius: 5px;
+    width: 25%;
+    display: inline-block;
+    padding: 0.6rem 0.2rem;
+    margin: 0.7rem 0;
+    font-size: 0.6rem;
+    font-family: 'Pontano Sans';
+    font-weight: bolder
+  
+
+}
+
+.blogbox
+{
+    width: 30%;
+    display: inline-block;
+    vertical-align: bottom;
+}
+
+.blog
+{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+}
