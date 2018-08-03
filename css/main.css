@@ -1,8 +1,16 @@
 /* 
-color-main: #FEB0BD;
+color-main: rgb(255, 20, 147)
 color-main-sec: #FEB0BD
 */
 
+:root
+{
+    --mainbackcolor: rgb(255, 20, 147, 0.92);
+    --fadedbackcolor: rgb(255, 20, 147, 0.1);
+    --fontColor: #D0D3D4;
+    --menuBackcolor: rgb(255, 20, 147, 0.9);
+
+}
 
 html
 {
@@ -13,6 +21,7 @@ html
 
 *
 {
+    font-family: 'Pontano Sans';
     padding: 0;
     margin: 0;
     box-sizing: border-box; /*Instead of a normalize.css file I am using this suite to overrun the Agent Style Sheet */
@@ -20,36 +29,112 @@ html
 
 header  img
 {
-    width: 25%;
+    width: 2rem;
     display: inline-block;
-    margin: 0.5rem;
+    margin: 0.1rem;
      
 }
 
 
 .mainHeader  i
 {
-    margin: 0.5rem;
+    margin: 0.3rem;
     float: right;
     cursor: pointer;
     font-size: 1.2rem;
-    color: rgb(250, 159, 174);
+    width: 10%;
+    font-size: 0.7rem;
+    color: var(--mainbackcolor)
+   
 
 }
+
+
 
 .mainHeader
 {
-    position: fixed; 
-    width: 100%;
-    top: 0;
-    z-index: 30000;
-    background-color: rgba(255, 255, 255, 0.692);
+    /* position: fixed; 
+    width: 95%;
+    margin: 0 auto;
+    top: 2%;
+    left: 2%;
+    z-index: 30000; */
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0 9px 1px grey; 
+
 }
+
+
+.menucontainer
+{
+    text-align: right;
+    margin: 0.7rem;
+    margin-right: 0; 
+    position: fixed;
+    top: 0;
+    bottom: 20%;
+    height: 90vh;
+    width: 100%;
+    right: 0;
+    z-index: 5;
+    display: none;
+}
+.menu
+{
+    font-size:0.97rem;
+    display: inline-block;
+    width: 99%;
+    margin: 0 0;
+    text-align: center;
+    background-color: var(--menuBackcolor);
+    box-shadow: 0px 0 9px 1px rgb(255, 255, 255);
+    height: 90vh;
+    position: relative;
+    
+}
+
+
+.menu  li
+{
+        display: inline-block;
+        width: 50%;
+        margin: 0.61rem 0;
+        color: white;
+        font-weight: bolder;
+
+}
+
+.menu li i
+{
+    position: absolute;
+    top: 4%;
+    right: 7%;
+}
+
+.menusocialI
+{
+    margin-top: 3rem;
+    color: whitesmoke;
+    font-size: 0.6rem;
+}
+
+.menusocialI i
+{
+    margin: 0 0.5rem;
+}
+
+.menusocialI i:hover
+{
+    transform: rotate(310deg);
+    transition: 1s;
+}
+
+
 
 
 .showcase
 {
-    background-image: linear-gradient(to top right, rgba(254, 176, 189, 0.945), rgba(254, 176, 189, 0.568)), url("../images/theycode.jpg"); 
+    background-image: linear-gradient(to top right, var(--mainbackcolor), var(--fadedbackcolor)), url("../images/theycode.jpg"); 
     background-position: bottom;
     background-size: cover;
     font-size: 0.7rem;
@@ -179,16 +264,11 @@ header  img
     margin-bottom: 1rem;
 }
 
-.cores h2
-{
-    font-family: 'Spirax';
-}
-
 .leadership h2:nth-child(1),
 .Impact h2:nth-child(1),
 .Purpose h2:nth-child(1)
 {
-    font-family: 'Pontano Sans';
+    
     padding: 1rem;
     border: 2px solid rgb(254, 176, 189);
     width: 50%;
@@ -212,14 +292,14 @@ header  img
     margin: 0 auto;
     margin-top: 0.5rem;
     line-height: 0.9rem;
-    font-family: 'Pontano Sans';
+    
     
 }
 
 .testimonies
 {
     /* background-color: rgb(254, 176, 189, 0.1); */
-    font-family: 'Pontano Sans';
+    
    
 }
 
@@ -278,7 +358,6 @@ header  img
 .signup
 {
     font-size: 0.6rem;
-    font-family: 'Pontano Sans';
     text-align: center
 }
 
@@ -309,7 +388,6 @@ header  img
     padding: 0.6rem 0.2rem;
     margin: 0.7rem 0;
     font-size: 0.6rem;
-    font-family: 'Pontano Sans';
     font-weight: bolder
   
 
@@ -366,7 +444,6 @@ header  img
 .blogintro p
 {
     font-size: 0.63rem;
-    font-family: 'Pontano Sans';
     line-height: 1.1rem;
     width: 85%;
     margin: 0 auto;
@@ -412,43 +489,9 @@ footer
     font-size: 0.5rem;
     font-weight: bolder;
     text-align: center;
-    font-family: 'Pontano Sans';
-}
-
-.menu
-{
-    background-image: linear-gradient(to top right, rgba(254, 176, 189, 0.945), rgba(254, 176, 189, 0.568) ), url("/images/Africa.png");
-    background-position: bottom;
-    background-size: cover;
-    margin: 0.3rem;
-    text-align: center;
-    color: white;
-    height: 100vh;
-    font-family: 'Pontano Sans';
-    display: none;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    margin: 0 auto;
-
-}
-
-.menu li
-{
-    margin: 0.4rem;;
-
-}
-
-.menu ul
-{
-    padding-top: 7vh
 }
 
 
-.menu .cancel
-{
-    cursor: pointer; 
-}
 
 @media(min-width: 1009px)
 {
@@ -460,11 +503,6 @@ footer
      
 }
 
-.mainHeader i
-{
-    color: rgba(254, 176, 189, 1);
-    font-size: 1.4rem;
-}
 
 .showcase
 {
