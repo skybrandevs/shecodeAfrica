@@ -5,7 +5,7 @@ color-main-sec: #FEB0BD
 
 :root
 {
-    --mainbackcolor: rgb(255, 20, 147, 0.92);
+    --mainbackcolor: rgb(255, 20, 147, 0.62);
     --fadedbackcolor: rgb(255, 20, 147, 0.1);
     --fontColor: #D0D3D4;
     --menuBackcolor: rgb(255, 20, 147, 0.9);
@@ -44,7 +44,7 @@ header  img
     font-size: 1.2rem;
     width: 10%;
     font-size: 0.7rem;
-    color: var(--mainbackcolor)
+    color: var(--mainbackcolor);
    
 
 }
@@ -73,11 +73,12 @@ header  img
     position: fixed;
     top: 0;
     bottom: 20%;
-    height: 90vh;
+    height: 100vh;
     width: 100%;
     right: 0;
     z-index: 5;
     display: none;
+    
 }
 .menu
 {
@@ -88,9 +89,18 @@ header  img
     text-align: center;
     background-color: var(--menuBackcolor);
     box-shadow: 0px 0 9px 1px rgb(255, 255, 255);
-    height: 90vh;
+    height: 100vh;
     position: relative;
+   
     
+}
+
+.menu  li strong
+{
+    padding: 0.1rem;
+    background-color: white;
+    color: var(--mainbackcolor);
+    border: none;
 }
 
 
@@ -98,22 +108,29 @@ header  img
 {
         display: inline-block;
         width: 50%;
-        margin: 0.61rem 0;
+        margin: 0.5rem 0;
         color: white;
-        font-weight: bolder;
+        font-weight: lighter;
+        cursor: pointer;
 
 }
 
-.menu li i
+.menu .menuout
 {
     position: absolute;
     top: 4%;
     right: 7%;
+    background-color: white;
+    padding: 0.2rem 0.3rem;
+    color: var(--mainbackcolor);
+    border-radius: 10rem;
+    font-weight: lighter;
+    font-size: 0.5rem;
 }
 
 .menusocialI
 {
-    margin-top: 3rem;
+    margin-top: 0rem;
     color: whitesmoke;
     font-size: 0.6rem;
 }
@@ -121,6 +138,7 @@ header  img
 .menusocialI i
 {
     margin: 0 0.5rem;
+    margin-bottom: 0.4rem;
 }
 
 .menusocialI i:hover
@@ -142,31 +160,22 @@ header  img
     text-align: center;
     clip-path: polygon(0% 0 , 100% 10%, 100% 70%, 0% 100%);
     position: relative;
-    margin-top: 4rem;
+    margin-top: 1rem;
 }
 
 .showcase h1
 {
-   position: absolute;
-   top: 30%;
-   left: 10%;
-   right: 0;
+   transform: translateY(7rem);
     color: white;
     font-family: 'Monoton', cursive;
     letter-spacing: 0.1rem;
-    font-size: 1.1rem
+    font-size: 0.7rem;
+    width: 100%;
+    font-weight: lighter; /* on test*/
+   
+    
 }
 
-.showcase h2
-{
-    color: white;
-    font-family: 'Monoton', cursive;
-    letter-spacing: 0.1rem;
-    position: absolute;
-   top: 40%;
-   left: 10%;
-   right: 0;
-}
 
 
 
@@ -176,9 +185,9 @@ header  img
     width: 90%;
     margin: 0 auto;
     font-size: 0.6rem;
-    background-image: linear-gradient(to top left,  rgba(254, 176, 189, 0.345), rgba(254, 176, 189, 0.368) );
-    font-weight: lighter;
-    color: rgba(254, 176, 189, 0.945);
+    background-image: linear-gradient(to top left,  var(--fadedbackcolor), var(--mainbackcolor) );
+    font-weight: bold;
+    color: var(--fontColor);
     border-radius: 20px 8px;
     height: 70vh;
   
@@ -186,10 +195,11 @@ header  img
 
 .foundersBox p
 {
-    margin: 0.5rem;
+    margin: 0.5rem ;
     text-align: left;
     font-family: 'Pontano Sans', sans-serif; 
-    font-weight: bolder
+    font-weight: bolder;
+    width: 90%;
     
 }
 
@@ -235,7 +245,7 @@ header  img
 
 .founderimage .foundername
 {
-    background-color: rgba(254, 176, 189, 0.795);
+    background-color: rgb(255, 20, 147, 0.32);
     width: 60%;
     margin: 0 auto;
     color: rgb(255, 255, 255);
@@ -270,7 +280,7 @@ header  img
 {
     
     padding: 1rem;
-    border: 2px solid rgb(254, 176, 189);
+    border: 2px solid var(--mainbackcolor);
     width: 50%;
     margin: 1rem auto;
 }
@@ -331,7 +341,7 @@ header  img
     padding: 0.4rem;
     margin: 0.9rem 0.6rem;
     box-shadow: 1px 1px 3px  1px rgb(254, 176, 189);
-    background-color: rgba(254, 176, 189, 0.068);
+    background-color: var(--fadedbackcolor)
 }
 
 .testimonycard h3
@@ -354,11 +364,81 @@ header  img
     text-align: center;
 }
 
+.messageUs
+{
+    width: 97%;
+    text-align: left;
+    margin: 2rem auto;
+    border: 1px solid var(--mainbackcolor);
+    padding: 1rem 1rem;
+    position: relative;
+    
+
+}
+
+.messageUs h2
+{
+    background-color:var(--menuBackcolor);
+    color: white;
+    width: 40%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    left: 30%;
+    position: absolute;
+    top: -4.5%;
+    text-align: center;
+
+}
+
+.messageInput
+{
+    margin: 1rem 0;
+}
+
+.messageUs p
+{
+   font-size: 0.5rem;
+   margin-bottom: -0.4rem;
+    
+}
+
+.messageInput input
+{
+    padding: 0.1rem;
+    width: 100%;
+    border: 1px solid rgb(255, 20, 147, 0.42);
+}
+
+.messageUs button
+{
+    padding: 0.3rem 0.8rem;
+    position: absolute;
+    bottom: -4.5%;
+    left: 29%;
+    background-color: rgb(255, 20, 147, 0.92);
+    border: none;
+    color:  white;
+    font-family: monospace;
+    font-size: 0.5rem;
+    cursor: pointer;
+    width: 50%;
+
+}
+
+#messagebox
+{
+    padding-bottom: 5rem;
+    color: green;
+    font-family: monospace;
+}
+
 
 .signup
 {
     font-size: 0.6rem;
-    text-align: center
+    text-align: center;
+    background-color:rgba(254, 176, 189, 0.868);
+    margin-bottom: 2rem;
 }
 
 .signup h2
@@ -381,7 +461,7 @@ header  img
     
     background-color: white;
     outline: none;
-    border: 1px solid rgb(254, 176, 189);
+    border: 1px solid var(--mainbackcolor);
     border-radius: 5px;
     width: 45%;
     display: inline-block;
@@ -395,7 +475,7 @@ header  img
 
 .signup .signbutton button:hover
 {
-    background-color:  rgb(254, 176, 189, 0.4);
+    background-color:   rgb(255, 20, 147);
     color: white;
     transform: scale(1.1);
     transition:  1s;
@@ -414,11 +494,12 @@ header  img
     font-family: 'Pontano Sans';
     position: relative;
     z-index: -4000;
+    margin: 0 auto;
 }
 
 .blogintro
 {
-    background-color: rgba(254, 176, 189, 0.926);
+    background-color: rgb(255, 20, 147);
     border-radius: 12px;
     padding: 0.4rem 0;
     width: 90%;
@@ -427,6 +508,7 @@ header  img
     color: white;
     z-index: 44;
     top: 80%;
+    box-shadow: -1px 4px 8px 2px grey;
 
 
 }
@@ -454,7 +536,7 @@ header  img
 .blogintro .watch
 {
     font-size: 0.6rem;
-   color: rgba(0, 0, 0, 0.411);
+   color: rgba(175, 170, 170, 0.801);
    width: 45%;
    display: inline-block;
    text-align: center;
@@ -470,39 +552,106 @@ header  img
 }
 
 .socialplatform i{
-    color: rgba(254, 176, 189, 0.926);
+    color:  rgb(255, 20, 147);
     display: inline-block;
     width: 12%;
 
+}
+
+.socialplatform i:hover
+{
+    transition: 0.72s;
+    transform: rotate(360deg);
+    cursor: pointer;
 }
 
 .socialplatform
 {
     text-align: center;
     margin: 0.7rem 0;
+    
 }
 
 footer
 {
-    background-color: rgba(254, 176, 189, 0.926);
+    background-color:rgba(0, 0, 0, 0.774);
     color: white;
     font-size: 0.5rem;
-    font-weight: bolder;
+    font-weight: lighter;
     text-align: center;
+    padding: 1.1rem;
+    font-size: 0.7rem;
+    text-align: left;
+    padding-bottom: 0.3rem;
 }
 
+footer ul li
+{
+    display: inline-block;
+    width: 40%;
+    margin: 0.3rem;
+cursor: pointer;
+}
+
+footer p
+{
+    font-family: monospace;
+    color: green;
+    font-size: 0.5rem;
+}
+
+
+/* Animations */
+ @keyframes sliderightmenu
+ {
+     0%
+     {
+         opacity: 0;
+         width: 30%;
+         transform: translateX(9rem);
+     }
+
+     20%
+     {
+         opacity: 0.3;
+         width: 40%;
+         transform: translateX(3rem);
+     }
+
+     50%
+     {
+         opacity: 0.6;
+         width: 90%;
+         transform: translateX(1rem);
+     }
+
+     100%
+     {
+         opacity: 0.9;
+         width: 98%;
+         transform: translateX(0);
+     }
+ }
 
 
 @media(min-width: 1009px)
 {
+    header
+    {
+        text-align: center;
+    }
     header  img
-{
-    width: 15%;
-    display: inline-block;
-    margin: 0.5rem;
-     
-}
+    {
+        width: 5rem;
+        display: inline-block;
+        margin: 0.3rem;
+         
+    }
 
+    .mainHeader  i
+    {
+        display: none;
+    }
 
 .showcase
 {
@@ -530,17 +679,95 @@ footer
    right: 0;
 }
 
+
+
+
+.menucontainer
+{
+    text-align: right;
+    margin: 0;
+    margin-right: 0; 
+    display: block;
+    animation: none;
+    position: static;
+    height: 2vh;
+    width: 100%;
+   
+    
+    
+}
+.menu
+{
+    font-size:0.6rem;
+    width: 100%;
+    margin: 0 0;
+    text-align: center;
+    background-color: var(--menuBackcolor);
+    box-shadow: 0px 0 9px 1px rgb(255, 255, 255);
+    height: auto;
+    padding-top: 0.7rem;
+    animation: none;
+   
+    
+}
+
+
+.menu  li
+{
+        display: inline-block;
+        width: 10%;
+        margin: 0 0.2rem;
+        color: white;
+        font-weight: lighter;
+        cursor: pointer;
+        
+
+}
+.menu li strong
+{
+    border: none;
+}
+.menu li i
+{
+   display: none;
+}
+
+.menusocialI
+{
+    margin: 1.2rem 0;
+    color: whitesmoke;
+    font-size: 0.6rem;
+}
+
+.menusocialI i
+{
+    margin: 0 0.5rem;
+}
+
+.menusocialI i:hover
+{
+    transform: rotate(310deg);
+    transition: 1s;
+}
+
+
+
 .showcase h1
 {
-   position: absolute;
-   top: 26%;
-   left: 5%;
-   right: 0;
+   
     color: white;
     font-family: 'Monoton', cursive;
     letter-spacing: 0.1rem;
     font-size: 2.6rem;
     
+}
+
+.showcase
+{
+    margin-top: 2.2rem;
+    background-position: center;
+    background-image: linear-gradient(to top right, var(--mainbackcolor), var(--fadedbackcolor)), url("../images/theycode.jpg"); 
+    background-position: bottom;
 }
 
 .foundersBox 
@@ -631,8 +858,8 @@ footer
 
 .signup
 {
-    background-color:rgba(254, 176, 189, 0.868);
-    width: 70%;
+    background-color:var(--fadedbackcolor);
+    width: 80%;
     margin: 3rem auto;
     padding: 2rem 0;
 
@@ -655,7 +882,11 @@ footer
   
 
 }
-
+.messageUs
+{
+    width: 60%;
+    margin: 1rem auto;
+}
 .blogbox
 {
     width: 30%;
@@ -668,6 +899,11 @@ footer
     width: 90%;
     text-align: center;
     margin: 0 auto;
+}
+
+footer
+{
+    text-align: center;
 }
 
 }
